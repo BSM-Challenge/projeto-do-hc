@@ -1,0 +1,6 @@
+@import url('../../global/global.css');
+@import url('./components/header.css');
+
+body {
+    background: var(--background);
+}
