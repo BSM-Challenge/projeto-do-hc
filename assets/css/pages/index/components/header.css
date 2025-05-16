@@ -1,8 +1,7 @@
 header {
     position: absolute;
-    width: 280px;
+    width: 16%;
     height: 100%;
-    overflow-y: hidden;
 }
 
 /* Imagens */
@@ -11,7 +10,6 @@ header nav figure {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: .5rem;
 }
 
 header nav figure div img#logo__hc {
@@ -20,20 +18,22 @@ header nav figure div img#logo__hc {
 }
 
 header nav figure img#logo__menu {
-    height: 10%;
-    width: 100%;
+    width: 30%;
     cursor: pointer;
 }
 
 
 header nav ul li a img {
-    width: 15%;
+    margin-left: 1.5rem;
+    width: 14%;
 }
 
 /* Linha para separar */
 header nav ul li .line {
+    width: 100%;
+    margin-top: .6rem;
     margin-left: .5rem;
-    width: 90%;
+    margin-bottom: .8rem;
     border: solid 1px var( --border-line);
 }
 
@@ -45,10 +45,10 @@ header nav ul li {
 header nav ul li a {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     padding: 1rem;
     color: var(--color-text-menu);
-    font-size: 16px;
+    font-size: 1.1rem;
 }
 
 header nav ul li a#active {
