@@ -1,7 +1,7 @@
-// alert("Antes de começarmos, precisamos de algumas informações.");
-// // Pegando o nome do usuário
-// nome = prompt("Qual é o seu nome?");
-// user = document.querySelector("#user").innerHTML = `Olá, ${nome}`;
+alert("Antes de começarmos, precisamos de algumas informações.");
+// Pegando o nome do usuário
+const nome = prompt("Qual é o seu nome?");
+const user = document.querySelector("#user").innerHTML = `Olá, ${nome}`;
 
 // Abrir e fechar o menu
 const botaoMenu = document.querySelector("#logo__menu");
@@ -42,4 +42,12 @@ botaoMenu.addEventListener("click", () => {
         header.style.width = "16%"; // Volta ao tamanho original
     }
     
+    // Reduz a largura do main quando os links do Header estão ocultos
+    if (links[0].style.display === "none") {
+        main.style.marginLeft = "8%"; // Largura reduzida
+        main.style.width = "90%"; 
+    } else {
+        main.style.marginLeft = "18%"; // Volta ao tamanho original
+        main.style.width = "81%";
+    }
 });
