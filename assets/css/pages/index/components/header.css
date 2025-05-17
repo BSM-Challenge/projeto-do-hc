@@ -5,7 +5,7 @@ header {
     transition: width 0.3s ease;
 }
 
-/* Imagens */
+/* Logos */
 header nav figure {
     display: flex;
     justify-content: center;
@@ -21,12 +21,6 @@ header nav figure div img#logo__hc {
 header nav figure img#logo__menu {
     width: 30%;
     cursor: pointer;
-}
-
-
-header nav ul li a img {
-    margin-left: 1.5rem;
-    width: 40px;
 }
 
 /* Linha para separar */
@@ -55,4 +49,9 @@ header nav ul li a {
 
 header nav ul li a#active {
     color: var(--color-active);
+}
+
+header nav ul li a img {
+    margin-left: 1.5rem;
+    width: 40px;
 }
