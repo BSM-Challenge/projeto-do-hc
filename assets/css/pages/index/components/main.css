@@ -7,3 +7,16 @@ main {
     padding: 2rem;
     transition: margin-left 0.3s ease;
 }
+
+main section#titles h1 {
+    color: var(--color-blue);
+    font-size: 32px;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-line);
+}
+
+main section#titles h2 {
+    padding: 1rem 0;
+    font-size: 24px;
+    font-weight: 600;
+}
