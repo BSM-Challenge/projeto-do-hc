@@ -123,6 +123,7 @@ main section#boards a .board div h4 {
     main section#boards {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 3rem;
     }
 
     main section#boards a.accessibility,
