@@ -23,6 +23,12 @@ header nav figure img#logo__menu {
     cursor: pointer;
 }
 
+header nav figure img#logo__menu__fechado {
+    display: none;
+    width: 30%;
+    cursor: pointer;
+}
+
 /* Linha para separar */
 header nav ul li .line {
     width: 100%;

@@ -5,49 +5,56 @@
 
 // Abrir e fechar o menu
 const botaoMenu = document.querySelector("#logo__menu");
+const botaoFechar = document.querySelector("#logo__menu__fechado");
 const logoHC = document.querySelector("#logo__hc");
 const links = document.querySelectorAll(".text__link");
 const icons = document.querySelectorAll(".icons");
 const header = document.querySelector("header");
 const main = document.querySelector("main");
 
-botaoMenu.addEventListener("click", () => {
-    // Alterna a visibilidade da logo
-    logoHC.style.display = logoHC.style.display === "none" ? "block" : "none";
+function alternarMenu() {
+    const menuVisivel = getComputedStyle(botaoMenu).display !== "none";
 
-    // Alterna a visibilidade dos links
+    // Alternar visibilidade dos botões
+    botaoMenu.style.display = menuVisivel ? "none" : "block";
+    botaoFechar.style.display = menuVisivel ? "block" : "none";
+
+    // Alternar visibilidade da logo
+    logoHC.style.display = (logoHC.style.display === "none") ? "block" : "none";
+
+    // Alternar visibilidade dos links
     links.forEach(link => {
-        link.style.display = link.style.display === "none" ? "block" : "none";
+        link.style.display = (link.style.display === "none") ? "block" : "none";
     });
 
-    // Centraliza os ícones
+    // Centralizar ou restaurar ícones
     icons.forEach(icon => {
         if (links[0].style.display === "none") {
             icon.style.display = "flex";
             icon.style.justifyContent = "center";
-            botaoMenu.style.margin = "2rem 1.6rem 0 0";
             icon.style.width = "44px";
+            botaoFechar.style.margin = "2rem 1.6rem 0 0";
         } else {
-            icon.style.margin = "";
             icon.style.display = "";
             icon.style.justifyContent = "";
             icon.style.width = "";
+            botaoFechar.style.margin = "";
         }
     });
 
-    // Reduz a largura do header quando os links estão ocultos
+    // Ajustar tamanho do header
+    header.style.width = (links[0].style.display === "none") ? "6%" : "16%";
+
+    // Ajustar tamanho e margem do main
     if (links[0].style.display === "none") {
-        header.style.width = "6%"; // Largura reduzida
+        main.style.marginLeft = "8%";
+        main.style.width = "90%";
     } else {
-        header.style.width = "16%"; // Volta ao tamanho original
-    }
-    
-    // Reduz a largura do main quando os links do Header estão ocultos
-    if (links[0].style.display === "none") {
-        main.style.marginLeft = "8%"; // Largura reduzida
-        main.style.width = "90%"; 
-    } else {
-        main.style.marginLeft = "18%"; // Volta ao tamanho original
+        main.style.marginLeft = "18%";
         main.style.width = "81%";
     }
-});
+}
+
+// Adiciona eventos para os dois botões
+botaoMenu.addEventListener("click", alternarMenu);
+botaoFechar.addEventListener("click", alternarMenu);
