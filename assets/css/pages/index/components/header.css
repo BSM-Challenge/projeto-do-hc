@@ -5,6 +5,10 @@ header {
     transition: width 0.3s ease;
 }
 
+header#header__mobile {
+    display: none;
+}
+
 /* Logos */
 header nav figure {
     display: flex;
@@ -70,47 +74,47 @@ header nav ul li a img {
 }
 
 /* Responsividade */
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     header {
         display: none;
         width: 100%;
-        bottom: 0;
+        bottom: 0px;
     }
 
-    header nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-        background-color: var(--background);
-    }
-
-    header nav figure div img#logo__hc {
-        display: none;
-    }
-
-    header nav figure img#logo__menu {
-        display: none;
-    }
-
-    header nav figure img#logo__menu__fechado {
+    header#header__mobile {
+        position: fixed;
         display: block;
-    }
-
-    header nav ul {
-        display: none;
-        flex-direction: column;
-        gap: 1rem;
-        position: absolute;
-        top: 10%;
-        left: 0;
         width: 100%;
-        background-color: var(--background);
-        padding-top: 1rem;
+        height: 7%; 
+        bottom: 0;
+        background: var(--background-white);
+        border-top: solid 1px var(--border-line);
+        overflow-y: hidden;
     }
 
-    header nav ul.active {
+    header#header__mobile nav ul {
+        width: 100%;
         display: flex;
+        justify-content: space-around;
+    }
+
+    header#header__mobile nav ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: black;
+    }
+
+    header#header__mobile nav ul li a img {
+        width: 30px;
+        margin: 0;
+    }
+
+    header#header__mobile nav ul li a span {
+        margin-left: .7rem;
+        margin-top: -2rem;
+        color: var(--color-text-menu);
     }
 
 }

@@ -111,9 +111,10 @@ main section#boards a .board div h4 {
 
 /* Responsividade */
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
     main {
         width: 100%;
+        height: auto;
         margin: 0;
         padding: 2rem 1rem;
         margin: 0 3rem 0 0%;
