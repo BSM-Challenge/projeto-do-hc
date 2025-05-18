@@ -68,3 +68,49 @@ header nav ul li a img {
     margin-left: 1.5rem;
     width: 40px;
 }
+
+/* Responsividade */
+@media (max-width: 800px) {
+    header {
+        display: none;
+        width: 100%;
+        bottom: 0;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: var(--background);
+    }
+
+    header nav figure div img#logo__hc {
+        display: none;
+    }
+
+    header nav figure img#logo__menu {
+        display: none;
+    }
+
+    header nav figure img#logo__menu__fechado {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        background-color: var(--background);
+        padding-top: 1rem;
+    }
+
+    header nav ul.active {
+        display: flex;
+    }
+
+}

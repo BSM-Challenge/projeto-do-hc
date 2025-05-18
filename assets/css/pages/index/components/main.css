@@ -108,3 +108,25 @@ main section#boards a .board div h4 {
     font-size: 22px;
     margin-bottom: 2rem;
 }
+
+/* Responsividade */
+
+@media (max-width: 800px) {
+    main {
+        width: 100%;
+        margin: 0;
+        padding: 2rem 1rem;
+        margin: 0 3rem 0 0%;
+    }
+
+    main section#boards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section#boards a.accessibility,
+    main section#boards a.board__2 {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}
