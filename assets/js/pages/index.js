@@ -1,7 +1,7 @@
-// alert("Antes de começarmos, precisamos de algumas informações.");
+alert("Antes de começarmos, precisamos de algumas informações.");
 // // Pegando o nome do usuário
-// const nome = prompt("Qual é o seu nome?");
-// const user = document.querySelector("#user").innerHTML = `Olá, ${nome}`;
+const nome = prompt("Qual é o seu nome?");
+const user = document.querySelector("#user").innerHTML = `Olá, ${nome}`;
 
 // Abrir e fechar o menu
 const botaoMenu = document.querySelector("#logo__menu");
@@ -15,11 +15,11 @@ const main = document.querySelector("main");
 function alternarMenu() {
     const menuVisivel = getComputedStyle(botaoMenu).display !== "none";
 
-    // Alternar visibilidade dos botões
+    // Alternar os botões de menu
     botaoMenu.style.display = menuVisivel ? "none" : "block";
     botaoFechar.style.display = menuVisivel ? "block" : "none";
 
-    // Alternar visibilidade da logo
+    // Alternar visibilidade do logo HC
     logoHC.style.display = (logoHC.style.display === "none") ? "block" : "none";
 
     // Alternar visibilidade dos links

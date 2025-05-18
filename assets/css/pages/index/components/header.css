@@ -30,7 +30,7 @@ header nav figure img#logo__menu__fechado {
 }
 
 /* Linha para separar */
-header nav ul li .line {
+header nav ul .line {
     width: 100%;
     margin-top: .6rem;
     margin-left: .5rem;
