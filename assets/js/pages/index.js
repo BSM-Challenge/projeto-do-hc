@@ -1,4 +1,4 @@
-alert("Antes de começarmos, precisamos de algumas informações.");
+alert("Antes de começarmos, precisamos de algumas informações."); 
 // // Pegando o nome do usuário
 const nome = prompt("Qual é o seu nome?");
 const user = document.querySelector("#user").innerHTML = `Olá, ${nome}`;
