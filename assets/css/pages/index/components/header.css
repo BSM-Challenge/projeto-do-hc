@@ -50,6 +50,7 @@ header nav ul li:hover {
 }
 
 header nav ul li a {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 2rem;
