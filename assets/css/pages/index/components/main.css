@@ -28,18 +28,18 @@ main section#boards {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
-main section#boards a {
+main section#boards a.accessibility {
     width: 30%;
-    padding: 1rem ;
+    padding: 1rem;
     background-color: var(--color-blue);
     border-radius: 15px;
     transition: all 0.3s ease-in-out;
 }
 
-main section#boards a:hover {
+main section#boards a.accessibility:hover {
     box-shadow: 0 0 18px var(--color-blue);
 }
 
@@ -55,18 +55,56 @@ main section#boards .board ul li {
     color: var(--color-white);
     list-style: circle;
     font-size: 20px;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 main section#boards .board p {
     display: flex;
     justify-content: end;
     align-items: center;
-    gap: .5rem;
     margin-top: 1rem;
     color: var(--color-white);
 }
 
 main section#boards .board p span img {
     width: 50px;
+}
+
+/* Boards após a linha */
+.line {
+    margin-top: 3rem;
+    width: 100%;
+    border: solid 1px var(--border-line);
+}
+
+main section#boards a.board__2 {
+    width: 30%;
+    padding: 1rem;
+    border: solid 1px var(--color-black);
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+main section#boards a.board__2:hover {
+    background: var(--color-black-04);
+}
+
+main section#boards a .board img {
+    width: 50px;
+}
+
+main section#boards a .board div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-black);
+}
+
+main section#boards a .board div img {
+    width: 200px;
+}
+
+main section#boards a .board div h4 {
+    font-size: 22px;
+    margin-bottom: 2rem;
 }

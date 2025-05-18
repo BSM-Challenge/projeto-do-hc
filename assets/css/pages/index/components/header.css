@@ -35,6 +35,12 @@ header nav ul li .line {
 /* Links */
 header nav ul li {
     display: flex;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li:hover {
+    background-color: var(--color-black-04);
+    border-radius: 0.5rem;
 }
 
 header nav ul li a {
