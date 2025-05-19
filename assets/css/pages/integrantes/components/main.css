@@ -11,3 +11,27 @@ body#integrantes main section#titles h1 {
     border: none;
     width: 100%;
 }
+
+body#integrantes main section#titles ul a li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    padding: .3rem;
+}
+
+body#integrantes main section#titles ul a li:hover {
+    background-color: var(--color-black-04);
+    border-radius: 5px;
+}
+
+body#integrantes main section#titles ul a li span {
+    color: var(--color-black);
+    padding-right: .5rem;
+    font-size: 20px;
+}
+
+body#integrantes main section#titles ul a li span img {
+    margin-top: .3rem;
+    width: 25px;
+}
