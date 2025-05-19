@@ -1,0 +1,13 @@
+body#integrantes main section#titles {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: solid 1px var(--border-line);
+}
+
+body#integrantes main section#titles h1 {
+    border: none;
+    width: 100%;
+}
