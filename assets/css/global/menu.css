@@ -1,6 +1,6 @@
 header {
     position: fixed;
-    width: 16%;
+    width: 18.1%;
     height: 100%;
     transition: width 0.3s ease;
 }
@@ -18,7 +18,7 @@ header nav figure {
 }
 
 header nav figure div img#logo__hc {
-    width: 100%;
+    width: 90%;
     cursor: pointer;
 }
 
@@ -57,8 +57,8 @@ header nav ul li a {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 2rem;
-    padding: 1rem;
+    gap: 1rem;
+    padding: .7rem;
     color: var(--color-text-menu);
     font-size: 1.1rem;
     white-space: nowrap;
@@ -70,7 +70,7 @@ header nav ul li a#active {
 
 header nav ul li a img {
     margin-left: 1.5rem;
-    width: 40px;
+    width: 30px;
 }
 
 /* Responsividade */

@@ -32,8 +32,8 @@ function alternarMenu() {
         if (links[0].style.display === "none") {
             icon.style.display = "flex";
             icon.style.justifyContent = "center";
-            icon.style.width = "44px";
-            botaoFechar.style.margin = "2rem 1.6rem 0 0";
+            icon.style.width = "34px";
+            botaoFechar.style.margin = "2rem 1rem 0 0";
         } else {
             icon.style.display = "";
             icon.style.justifyContent = "";
@@ -43,15 +43,15 @@ function alternarMenu() {
     });
 
     // Ajustar tamanho do header
-    header.style.width = (links[0].style.display === "none") ? "6%" : "16%";
+    header.style.width = (links[0].style.display === "none") ? "6%" : "18.1%";
 
     // Ajustar tamanho e margem do main
     if (links[0].style.display === "none") {
         main.style.marginLeft = "8%";
         main.style.width = "90%";
     } else {
-        main.style.marginLeft = "18%";
-        main.style.width = "81%";
+        main.style.marginLeft = "20%";
+        main.style.width = "79%";
     }
 }
 
