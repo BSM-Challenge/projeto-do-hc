@@ -58,3 +58,24 @@ function alternarMenu() {
 // Adiciona eventos para os dois botões
 botaoMenu.addEventListener("click", alternarMenu);
 botaoFechar.addEventListener("click", alternarMenu);
+
+// Mostrar a mensagem de página não desenvolvida
+const linksNaoDesenvolvidos = document.querySelectorAll(".pagina__nao__desenvolvida");
+
+function paginaNaoDesenvolvida(event) {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    const mensagem = document.getElementById('pagina__nao__desenvolvida');
+    
+    // Mostra a mensagem
+    mensagem.classList.add('visible');
+    
+    // Esconde a mensagem após 3 segundos
+    setTimeout(() => {
+        mensagem.classList.remove('visible');
+    }, 2000);
+}
+
+// Adiciona o evento a cada link
+linksNaoDesenvolvidos.forEach(link => {
+    link.addEventListener("click", paginaNaoDesenvolvida);
+});
