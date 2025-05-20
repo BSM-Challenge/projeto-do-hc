@@ -59,6 +59,12 @@ body#perguntas__frequentes main section#titles {
     border: solid 2px var(--color-black);
     border-radius: 15px;
   }
+
+  body#perguntas__frequentes .rectangle p{
+    font-size: 25px;
+    color: var(--border-line);
+    font-weight: medium;
+  }
     body#perguntas__frequentes div#line{
     margin: 1rem 0;
     width: 100;
