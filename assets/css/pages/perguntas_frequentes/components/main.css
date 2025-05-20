@@ -82,7 +82,7 @@ body#perguntas__frequentes section#pdf div#container__pdf {
   }
 
 body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf {
-  border: solid #07A0A8 3px;
+  border: solid var(--pdf-color) 4px;
   border-radius: 15px;
   width: 27%;
   justify-content: center;
