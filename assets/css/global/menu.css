@@ -74,8 +74,10 @@ header nav ul li a img {
 }
 
 /* Responsividade */
-@media (max-width: 600px) {
-    header {
+
+/* Celular - Tablet */
+@media (max-width: 1200px) {
+        header {
         display: none;
         width: 100%;
         bottom: 0px;
@@ -115,5 +117,4 @@ header nav ul li a img {
         margin-top: -1.3rem;
         color: var(--color-text-menu);
     }
-
 }
