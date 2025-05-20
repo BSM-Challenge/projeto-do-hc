@@ -78,27 +78,26 @@ body#perguntas__frequentes section#pdf div#container__pdf {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 1rem;
   }
 
 body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf {
-  border: solid var(--pdf-color) 4px;
+  border: solid var(--pdf-color) 3px;
   border-radius: 15px;
-  width: 27%;
+  width: 25%;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
-body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf p{
-  font-size: 20px;
+body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf p {
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
-
-  
-  
+  margin-bottom: 1.2rem;
 }
 
-
+body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf img {
+  margin-top: 1rem;
+}
