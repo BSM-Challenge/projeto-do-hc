@@ -80,14 +80,28 @@ body#perguntas__frequentes section#pdf div#container__pdf {
   }
 
 body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf {
-  border: solid var(--pdf-color) 3px;
-  border-radius: 15px;
   width: 25%;
+  display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  display: flex;
   gap: 30px;
+  border: solid var(--pdf-color) 3px;
+  border-radius: 15px;
+  transition: all ease-in-out 0.3s;
+  }
+
+body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf:hover{
+  background-color: var(--color-green-hover);
+
+}
+
+body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf a {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf p {
@@ -95,8 +109,11 @@ body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf p {
   font-weight: bold;
   text-align: center;
   margin-bottom: 1.2rem;
+  color: var(--color-black);
+  
 }
 
 body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf img {
+  width: 100px;
   margin-top: 1rem;
 }
