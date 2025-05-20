@@ -1,0 +1,68 @@
+body#perguntas__frequentes main section#titles {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: solid 1px var(--border-line);
+  }
+  
+  body#perguntas__frequentes main section#titles h1 {
+      border: none;
+      width: 100%;
+  }
+  
+  body#perguntas__frequentes main section#titles ul a li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+      padding: .3rem;
+  }
+  
+  body#perguntas__frequentes main section#titles ul a li:hover {
+      background-color: var(--color-black-04);
+      border-radius: 5px;
+  }
+  
+  body#perguntas__frequentes main section#titles ul a li span {
+      color: var(--color-black);
+      padding-right: .5rem;
+      font-size: 20px;
+  }
+  
+  body#perguntas__frequentes main section#titles ul a li span img {
+      margin-top: .3rem;
+      width: 25px;
+  }
+
+  /* section chat bot */
+section#chat__bot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+   }
+  .container {
+    display: flex;
+    justify-content:center;/* Centraliza horizontalmente */
+    align-items: center;/* Centraliza verticalmente */
+    height: 50vh;
+    width: 50vw; 
+  }
+  .rectangle {
+    position: center;
+    width: 929px;
+    height: 234px;
+    padding: 1rem;
+    border: solid 2px var(--color-black);
+    border-radius: 15px;
+  }
+  div#line{
+    margin-top: 1rem;
+    width: 10;
+    border: solid 1px; 
+  }
+
+
