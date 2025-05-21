@@ -41,12 +41,19 @@ body#contato main section#titles ul a li span img {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    font-size: large;
+    font-size: 50px;
+    margin-top: 0;
 }
 
 body#contato main section#contato div img {
     width: 100px;
 }
 body#contato main section#contato div h2{
+  font-size: 30px;
+}
+
+body#contato main section h2#text {
+  text-align: center;
+  font-weight: lighter;
   font-size: 30px;
 }
