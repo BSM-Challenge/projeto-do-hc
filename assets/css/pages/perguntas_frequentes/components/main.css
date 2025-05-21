@@ -44,32 +44,47 @@ body#perguntas__frequentes main section#titles {
     flex-direction: column;
     margin-top: 50px;
    }
-    body#perguntas__frequentes .container {
+    /* body#perguntas__frequentes .container {
     display: flex;
     justify-content:center;
     align-items: center;
     height: 20vw;
-    width: 50vw; 
-  }
-   body#perguntas__frequentes .rectangle {
+    width: 50vw;
+  } */
+
+   /* body#perguntas__frequentes .rectangle {
     position: center;
     width: 929px;
     height: 234px;
     padding: 1rem;
     border: solid 2px var(--color-black);
     border-radius: 15px;
+  } */
+
+  body#perguntas__frequentes section#chat__bot div.rectangle div.message_box textarea.message {
+    position: center;
+    width: 929px;
+    height: 234px;
+    padding: 1rem;
+    border: solid 2px var(--color-black);
+    border-radius: 15px;
+    font-size: 20px;
+    color: var(--border-line);
+    margin-top: 40px;
+  }
+    body#perguntas__frequentes div.line{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100;
+    border: solid 1px var(--border-line); 
   }
 
-  body#perguntas__frequentes .rectangle p{
-    font-size: 25px;
-    color: var(--border-line);
-    font-weight: medium;
-  }
-    body#perguntas__frequentes div#line{
-    margin: 1rem 0;
-    width: 100;
-    border: solid 1px; 
-  }
+body#perguntas__frequentes button {
+  border: solid black 2px;
+  border-radius: 10px;
+  font-size: large;
+  padding: 5px;
+}
 
   /* Section PDF */
   body#perguntas__frequentes section#pdf {
