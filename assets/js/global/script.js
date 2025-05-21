@@ -79,3 +79,14 @@ function paginaNaoDesenvolvida(event) {
 linksNaoDesenvolvidos.forEach(link => {
     link.addEventListener("click", paginaNaoDesenvolvida);
 });
+
+// Ativar o switch
+document.addEventListener('DOMContentLoaded', () => {
+    const switches = document.querySelectorAll('.switch');
+
+    switches.forEach(sw => {
+        sw.addEventListener('click', () => {
+            sw.classList.toggle('active');
+        });
+    });
+});
