@@ -36,74 +36,75 @@ body#deficiente_visual main section#titles ul a li span img {
 
 /* Section configurações */
 
-body#deficiente_visual main section#configurações {
+
+body#deficiente_visual main section#configuracoes {
     margin-top: 4rem;
 }
 
-body#deficiente_visual main section#configurações h2 {
+body#deficiente_visual main section#configuracoes h2 {
     display: flex;
-    align-content: center;
     justify-content: center;
+    align-items: center;
     font-size: 30px;
 }
 
-body#deficiente_visual main section#configurações ul{
+body#deficiente_visual main section#configuracoes ul {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin-top: 2rem;
     gap: 1rem;
+    margin-top: 2rem;
 }
 
-body#deficiente_visual main section#configurações ul li {
+body#deficiente_visual main section#configuracoes ul li {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    width: 100%;
+    max-width: 830px; 
     margin-top: 2rem;
     font-size: 20px;
-    width: 100%;
-    max-width: 830px;
 }
 
-body#deficiente_visual main section#configurações ul li div.switch {
-    display: flex;
+body#deficiente_visual main section#configuracoes ul li div.switch {
     position: relative;
+    width: 64px;
     height: 32px;
-    width: 32px;
     cursor: pointer;
-    flex-shrink: 0;
+    display: flex;
+    flex-shrink: 0; 
 }
 
-body#deficiente_visual main section#configurações ul li div.switch button {
+body#deficiente_visual main section#configuracoes ul li div.switch button {
     width: 32px;
     height: 32px;
     cursor: pointer;
-    position: absolute;
     background: var(--color-white);
     border: 0;
     border-radius: 50%;
     background: var(--color-black);
-    transition: left 0.3s ease;
+    position: absolute;
     left: 0;
     top: 0;
+    transition: left 0.3s ease;
     z-index: 1;
 }
 
-body#deficiente_visual main section#configurações ul li div.switch span {
+body#deficiente_visual main section#configuracoes ul li div.switch span {
+    display: block;
     width: 100%;
     height: 100%;
-    display: block;
     background: var(--color-black-04);
     border-radius: 9999px;
 }
 
-body#deficiente_visual main section#configurações ul li div.switch.active button {
-    left: 32px;
+body#deficiente_visual main section#configuracoes ul li div.switch.active span {
+    background: var(--color-green-hover); 
 }
 
-body#deficiente_visual main section#configurações ul li div.switch.active span {
-    background: var(--color-green-hover);
+body#deficiente_visual main section#configuracoes ul li div.switch.active button {
+    left: 32px;
 }
 
 /* Responsividade */
@@ -113,7 +114,7 @@ body#deficiente_visual main section#configurações ul li div.switch.active span
         padding-right: 1rem;
     }
 
-    body#deficiente_visual main section#configurações {
+    body#deficiente_visual main section#configuracoes {
         margin-bottom: 10rem;
     }
 }
