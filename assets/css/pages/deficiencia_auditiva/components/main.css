@@ -1,4 +1,4 @@
-body#deficiência_auditiva main section#titles {
+body#deficiencia_auditiva main section#titles {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -7,29 +7,29 @@ body#deficiência_auditiva main section#titles {
     border-bottom: solid 1px var(--border-line);
 }
 
-body#deficiência_auditiva main section#titles h1 {
+body#deficiencia_auditiva main section#titles h1 {
     border: none;
 }
 
-body#deficiência_auditiva main section#titles ul a li {
+body#deficiencia_auditiva main section#titles ul a li {
     display: flex;
     align-items: center;
     padding: .3rem;
     transition: all 0.3s ease-in-out;
 }
 
-body#deficiência_auditiva main section#titles ul a li:hover {
+body#deficiencia_auditiva main section#titles ul a li:hover {
     background-color: var(--color-black-04);
     border-radius: 5px;
 }
 
-body#deficiência_auditiva main section#titles ul a li span {
+body#deficiencia_auditiva main section#titles ul a li span {
     font-size: 20px;
     color: var(--color-black);
     padding-right: .5rem;
 }
 
-body#deficiência_auditiva main section#titles ul a li span img {
+body#deficiencia_auditiva main section#titles ul a li span img {
     width: 25px;
     margin-top: .3rem;
 }
@@ -37,18 +37,18 @@ body#deficiência_auditiva main section#titles ul a li span img {
 /* Section configurações */
 
 
-body#deficiência_auditiva main section#configuracoes {
+body#deficiencia_auditiva main section#configuracoes {
     margin-top: 4rem;
 }
 
-body#deficiência_auditiva main section#configuracoes h2 {
+body#deficiencia_auditiva main section#configuracoes h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
 }
 
-body#deficiência_auditiva main section#configuracoes ul {
+body#deficiencia_auditiva main section#configuracoes ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,7 @@ body#deficiência_auditiva main section#configuracoes ul {
     margin-top: 2rem;
 }
 
-body#deficiência_auditiva main section#configuracoes ul li {
+body#deficiencia_auditiva main section#configuracoes ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,7 +67,7 @@ body#deficiência_auditiva main section#configuracoes ul li {
     font-size: 20px;
 }
 
-body#deficiência_auditiva main section#configuracoes ul li div.switch {
+body#deficiencia_auditiva main section#configuracoes ul li div.switch {
     position: relative;
     width: 64px;
     height: 32px;
@@ -76,7 +76,7 @@ body#deficiência_auditiva main section#configuracoes ul li div.switch {
     flex-shrink: 0; 
 }
 
-body#deficiência_auditiva main section#configuracoes ul li div.switch button {
+body#deficiencia_auditiva main section#configuracoes ul li div.switch button {
     width: 32px;
     height: 32px;
     cursor: pointer;
@@ -91,7 +91,7 @@ body#deficiência_auditiva main section#configuracoes ul li div.switch button {
     z-index: 1;
 }
 
-body#deficiência_auditiva main section#configuracoes ul li div.switch span {
+body#deficiencia_auditiva main section#configuracoes ul li div.switch span {
     display: block;
     width: 100%;
     height: 100%;
@@ -99,10 +99,28 @@ body#deficiência_auditiva main section#configuracoes ul li div.switch span {
     border-radius: 9999px;
 }
 
-body#deficiência_auditiva main section#configuracoes ul li div.switch.active span {
+body#deficiencia_auditiva main section#configuracoes ul li div.switch.active span {
     background: var(--color-green-hover); 
 }
 
-body#deficiência_auditiva main section#configuracoes ul li div.switch.active button {
+body#deficiencia_auditiva main section#configuracoes ul li div.switch.active button {
     left: 32px;
+}
+
+/* Responsividade */
+
+@media (max-width: 1200px) {
+    body#deficiencia_auditiva main section#titles ul a li span {
+        padding-right: 1rem;
+    }
+
+    body#deficiencia_auditiva main section#configuracoes {
+        margin-bottom: 10rem;
+    }
+}
+
+@media (max-width: 490px) {
+    body#deficiencia_auditiva main section#titles ul a li span {
+        padding-right: 1.5rem;
+    }
 }
