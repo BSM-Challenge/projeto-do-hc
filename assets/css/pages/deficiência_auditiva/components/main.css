@@ -1,0 +1,35 @@
+body#deficiência_auditiva main section#titles {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .2rem;
+    border-bottom: solid 1px var(--border-line);
+}
+
+body#deficiência_auditiva main section#titles h1 {
+    border: none;
+}
+
+body#deficiência_auditiva main section#titles ul a li {
+    display: flex;
+    align-items: center;
+    padding: .3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+body#deficiência_auditiva main section#titles ul a li:hover {
+    background-color: var(--color-black-04);
+    border-radius: 5px;
+}
+
+body#deficiência_auditiva main section#titles ul a li span {
+    font-size: 20px;
+    color: var(--color-black);
+    padding-right: .5rem;
+}
+
+body#deficiência_auditiva main section#titles ul a li span img {
+    width: 25px;
+    margin-top: .3rem;
+}
