@@ -1,0 +1,18 @@
+body#menu__mobile main figure {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+body#menu__mobile main figure img {
+    width: 10%;
+}
+
+body#menu__mobile main figure img#logo__hc{
+    width: 40%;
+}
+
+body#menu__mobile main ul a li span img {
+    width: 10%;
+}
