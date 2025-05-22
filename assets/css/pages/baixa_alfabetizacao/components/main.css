@@ -39,7 +39,7 @@ body#baixa__alfabetizacao main section#titles ul a li span img {
 /* Section configuracoes */
 
 body#baixa__alfabetizacao main section#configuracoes {
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 body#baixa__alfabetizacao main section#configuracoes h2 {
@@ -55,6 +55,7 @@ body#baixa__alfabetizacao main section#configuracoes ul {
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+    margin-top: 2rem;
 }
 
 body#baixa__alfabetizacao main section#configuracoes ul li {
@@ -62,7 +63,7 @@ body#baixa__alfabetizacao main section#configuracoes ul li {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 500px; 
+    max-width: 830px; 
     margin-top: 2rem;
     font-size: 20px;
 }
