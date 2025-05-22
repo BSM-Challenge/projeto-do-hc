@@ -107,3 +107,21 @@ body#baixa__alfabetizacao main section#configuracoes ul li div.switch.active spa
 body#baixa__alfabetizacao main section#configuracoes ul li div.switch.active button {
     left: 32px;
 }
+
+/* Responsividade */
+
+@media (max-width: 1200px) {
+    body#baixa__alfabetizacao main section#titles ul a li span {
+        padding-right: 1rem;
+    }
+
+    body#baixa__alfabetizacao main section#configuracoes {
+        margin-bottom: 10rem;
+    }
+}
+
+@media (max-width: 490px) {
+    body#baixa__alfabetizacao main section#titles ul a li span {
+        padding-right: 1.5rem;
+    }
+}
