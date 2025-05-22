@@ -63,3 +63,27 @@ body#deficiente_visual main section#configurações ul li {
     margin-top: 2rem;
     font-size: 20px;
 }
+
+body#deficiente_visual main section#configurações ul li div.switch {
+    display: flex;
+    position: relative;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+body#deficiente_visual main section#configurações ul li div.switch button {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    position: absolute;
+    background: var(--color-white);
+    border: 0;
+    border-radius: 50%;
+    background: var(--color-black);
+    transition: left 0.3s ease;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
