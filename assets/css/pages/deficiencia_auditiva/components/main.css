@@ -120,7 +120,14 @@ body#deficiencia_auditiva main section#configuracoes ul li div.switch.active but
 }
 
 @media (max-width: 490px) {
+    body#deficiencia_auditiva main section#configuracoes {
+        margin-bottom: 12rem;
+    }
     body#deficiencia_auditiva main section#titles ul a li span {
-        padding-right: 1.5rem;
+        padding-right: 3.5rem;
+    }
+
+    body#deficiencia_auditiva main section#titles ul a li span img {
+        margin-left: 1rem;
     }
 }
