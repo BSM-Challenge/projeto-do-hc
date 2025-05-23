@@ -1,8 +1,8 @@
 @import url("./index/index.css");
 @import url("./integrantes/integrantes.css");
-@import url("./perguntas_frequentes/perguntas_frequentes.css");
+@import url("./perguntas-frequentes/perguntas-frequentes.css");
 @import url("./contato/contato.css");
-@import url("./baixa_alfabetizacao/baixa_alfabetizacao.css");
-@import url("./deficiente_visual/deficiente_visual.css");
-@import url("./deficiencia_auditiva/deficiencia_auditiva.css");
-@import url("./menu_mobile/menu_mobile.css");
+@import url("./baixa-alfabetizacao/baixa-alfabetizacao.css");
+@import url("./deficiente-visual/deficiente-visual.css");
+@import url("./deficiencia-auditiva/deficiencia-auditiva.css");
+@import url("./menu-mobile/menu-mobile.css");
