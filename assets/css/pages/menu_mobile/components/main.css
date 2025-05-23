@@ -9,10 +9,32 @@ body#menu__mobile main figure img {
     width: 10%;
 }
 
-body#menu__mobile main figure img#logo__hc{
+body#menu__mobile main figure img#logo__hc {
     width: 40%;
 }
 
+body#menu__mobile main nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+body#menu__mobile main ul a {
+}
+
+body#menu__mobile main ul a li {
+    display: flex;
+    juastify-content: start;
+    align-items: center;
+}
+
+body#menu__mobile main ul a li span {
+    font-size: 12px;
+}
+
 body#menu__mobile main ul a li span img {
+    background-color: aqua;
     width: 10%;
 }
