@@ -20,6 +20,7 @@
     /* Hovers */
     --color-black-04: rgba(0, 0, 0, 0.1);
     --color-green-hover: rgba(7, 160, 168, 0.164);
-    --color-white-hover: rgba(255, 255, 255, 0.3)
+    --color-white-button-hover: rgba(255, 255, 255, 0.3);
+    --color-white-placeholder-hover: rgba(255, 255, 255, 0.6);
 
 }

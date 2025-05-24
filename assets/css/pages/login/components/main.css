@@ -33,29 +33,36 @@ body#login div.login-container form.login-form label {
 }
 
 body#login div.login-container form.login-form input {
+    color: var(--color-white);
   font-size: 22.5px;
   background: transparent;
   border: none;
-  border-bottom: 5px;
+  border-bottom: 2px solid var(--color-white);
   margin-bottom: 20px;
   outline: none;
-  border: none;
-  border-bottom: 2px solid white;
-  background: transparent;
+}
+
+body#login div.login-container form.login-form input::placeholder {
+  color: var(--color-white-placeholder-hover);
+  font-size: 22.5px;
 }
 
 body#login div.login-container form.login-form button {
-  border: none;
+  border: 2px solid var(--color-white);
+  border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 15px;
   background: transparent;
-  color: #ffff;
-  border: 2px solid #ffff;
-  border-radius: 8px;
+  color: var(--color-white);
   padding: 10px 20px;
   transition: background-color 0.3s, color 0.3s;
+}
+
+body#login div.login-container form.login-form button:hover {
+  background-color: var(--color-white-button-hover);
+  color: white;
 }
 
 body#login div.login-container form.login-form div.login-links {
