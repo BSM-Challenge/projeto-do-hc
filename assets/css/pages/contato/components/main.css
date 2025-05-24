@@ -1,0 +1,59 @@
+body#contato main section#titles {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: solid 1px var(--border-line);
+  }
+  
+body#contato main section#titles h1 {
+    border: none;
+    width: 100%;
+  }
+
+body#contato main section#titles ul a li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    padding: .3rem;
+  }
+  
+body#contato main section#titles ul a li:hover {
+    background-color: var(--color-black-04);
+    border-radius: 5px;
+  }
+  
+body#contato main section#titles ul a li span {
+    color: var(--color-black);
+    padding-right: .5rem;
+    font-size: 20px;
+  }
+  
+body#contato main section#titles ul a li span img {
+    margin-top: .3rem;
+    width: 25px;
+  }
+
+  body#contato main section#contato div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 50px;
+    margin-top: 0;
+}
+
+body#contato main section#contato div img {
+    width: 100px;
+}
+body#contato main section#contato div h2{
+  font-size: 30px;
+}
+
+body#contato main section h2#text {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 30px;
+}
