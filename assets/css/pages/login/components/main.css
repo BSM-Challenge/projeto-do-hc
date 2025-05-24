@@ -65,9 +65,15 @@ body#login div.login-container form.login-form button:hover {
   color: white;
 }
 
-body#login div.login-container form.login-form div.login-links {
-  color: var(--color-white);
-  font-size: 15px;
+body#login div.login-container form.login-form div.login-links a {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
+  padding: 0 5px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 0.3s ease;
+}
+
+body#login div.login-container form.login-form div.login-links a:hover {
+    color: rgba(255, 255, 255, 0.3);
 }
