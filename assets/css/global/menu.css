@@ -9,6 +9,14 @@ header#header__mobile {
     display: none;
 }
 
+header#header__mobile nav ul li a img.desativado {
+    display: none;
+}
+
+header#header__mobile nav ul li a img.ativado {
+    display: block;
+}
+
 /* Logos */
 header nav figure {
     display: flex;
