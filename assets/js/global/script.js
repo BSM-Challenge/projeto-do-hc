@@ -1,3 +1,8 @@
+// Pegando o nome do usuário do localStorage
+const nomeSalvo = localStorage.getItem("nomeUsuario");
+const nomeMenu = document.querySelector("#user");
+nomeMenu.innerHTML = `Olá, ${nomeSalvo}`;
+
 // Abrir e fechar o menu
 const botaoMenu = document.querySelector("#logo__menu");
 const botaoFechar = document.querySelector("#logo__menu__fechado");
