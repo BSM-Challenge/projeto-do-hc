@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="./assets/css/pages/style.css">
+    <link rel="icon" href="./assets/img/global/favicon_bsm_challenge.png">
 </head>
 
 <body id="login">
@@ -13,15 +14,15 @@
         <form class="login-form">
             <h1>Entrar no Sistema</h1>
             <label for="name">Nome:</label>
-            <input type="name" id="name" placeholder="Digite o seu nome" required>
+            <input type="text" id="name" placeholder="Digite o seu nome" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Digite o seu email" required>
+            <input type="text" id="email" placeholder="Digite o seu email">
 
             <label for="senha">Senha:</label>
             <input type="password" id="senha" placeholder="Digite a sua senha" required>
 
-            <p id="status"></p>
+            <p id="status" role="alert"></p>
             <button type="submit">Entrar</button>
 
             <div class="login-links">
@@ -30,6 +31,8 @@
             </div>
         </form>
     </div>
-</body>
 
+    <script src="./assets/js/pages/login.js"></script>
+
+</body>
 </html>

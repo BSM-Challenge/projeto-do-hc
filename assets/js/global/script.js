@@ -1,8 +1,3 @@
-// alert("Antes de começarmos, precisamos de algumas informações."); 
-// // // Pegando o nome do usuário
-// const nome = prompt("Qual é o seu nome?");
-// const user = document.querySelector("#user").innerHTML = `Olá, ${nome}`;
-
 // Abrir e fechar o menu
 const botaoMenu = document.querySelector("#logo__menu");
 const botaoFechar = document.querySelector("#logo__menu__fechado");
