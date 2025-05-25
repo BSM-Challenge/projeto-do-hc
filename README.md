@@ -125,4 +125,4 @@ Siga os passos abaixo para executar o projeto em sua máquina local:
 
 Você pode visualizar e testar o projeto acessando o link abaixo:
 
-🔗 [Clique aqui para acessar o projeto]()
+🔗 [Clique aqui para acessar o projeto](https://projeto-do-hc.vercel.app/login.html)
