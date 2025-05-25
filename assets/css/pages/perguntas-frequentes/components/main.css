@@ -116,3 +116,29 @@ body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf img
   width: 100px;
   margin-top: 1rem;
 }
+
+/* Responsividade */
+
+@media (max-width: 1200px) {
+    body#deficiente_visual main section#titles ul a li span {
+        padding-right: 1rem;
+    }
+
+    body#deficiente_visual main section#configuracoes {
+        margin-bottom: 10rem;
+    }
+}
+
+@media (max-width: 490px) {
+    body#deficiente_visual main section#configuracoes {
+        margin-bottom: 12rem;
+    }
+
+    body#deficiente_visual main section#titles ul a li span {
+        padding-right: 3.5rem;
+    }
+
+    body#deficiente_visual main section#titles ul a li span img {
+        margin-left: 1rem;
+    }
+}
