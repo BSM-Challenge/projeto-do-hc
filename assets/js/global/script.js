@@ -94,3 +94,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Fazendo a troca de icon do menu mobile quando o usuário clicar
+// Seleciona todos os links do menu
+const navLinks = document.querySelectorAll("header#header__mobile nav ul li a");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", function (e) {
+        // e.preventDefault(); // Use isso se você não quiser mudar de página ao clicar
+
+        // Primeiro, desativa todos os ícones
+        navLinks.forEach(otherLink => {
+            const icons = otherLink.querySelectorAll("img");
+            icons.forEach(icon => {
+                if (icon.classList.contains("icon__menu") || icon.classList.contains("icon__avisos") || icon.classList.contains("logo__home")) {
+                    icon.classList.remove("ativado");
+                    icon.classList.add("desativado");
+                }
+            });
+        });
+
+        // Depois, ativa os ícones do link clicado
+        const iconsToActivate = this.querySelectorAll("img");
+        iconsToActivate.forEach(icon => {
+            icon.classList.remove("desativado");
+            icon.classList.add("ativado");
+        });
+    });
+});
