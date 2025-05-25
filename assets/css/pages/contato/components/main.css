@@ -1,40 +1,40 @@
 body#contato main section#titles {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
-    border-bottom: solid 1px var(--border-line);
-  }
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: solid 1px var(--border-line);
+}
   
 body#contato main section#titles h1 {
-    border: none;
-    width: 100%;
-  }
+  border: none;
+  width: 100%;
+}
 
 body#contato main section#titles ul a li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
-    padding: .3rem;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  padding: .3rem;
+}
   
 body#contato main section#titles ul a li:hover {
-    background-color: var(--color-black-04);
-    border-radius: 5px;
-  }
+  background-color: var(--color-black-04);
+  border-radius: 5px;
+}
   
 body#contato main section#titles ul a li span {
-    color: var(--color-black);
-    padding-right: .5rem;
-    font-size: 20px;
-  }
+  color: var(--color-black);
+  padding-right: .5rem;
+  font-size: 20px;
+}
   
 body#contato main section#titles ul a li span img {
-    margin-top: .3rem;
-    width: 25px;
-  }
+  margin-top: .3rem;
+  width: 25px;
+}
 
 
 /* Section telefone e endereço */
@@ -74,8 +74,7 @@ body#contato main section#contato ul li {
 }
 
 body#contato main section#contato ul li span#address {
-  margin-left: 1rem;
-  margin-top: 1rem;
+  margin: 1rem 0 0 1rem;
 }
 
 body#contato main section#contato ul li span img#icon-tel {
@@ -121,4 +120,59 @@ body#contato main section#social-media ul li span p {
 
 body#contato main div.line {
   margin: 3rem 0 1rem 0;
+}
+
+/* Responsividade */
+
+@media (max-width: 1200px) {
+  body#contato main section#contato div#title {
+    font-size: 25px;
+  }
+  body#contato main section#contato div#title img#icon-contato {
+    width: 15%;
+
+  }
+
+  body#contato main section#contato ul {
+    display: flex;
+    margin: 0;
+  }
+
+  body#contato main section#contato ul li {
+    font-size: 20px;
+  }
+
+  body#contato main section#contato ul li span img#icon-local {
+    width: 100%;
+  }
+
+  body#contato main section#contato ul li span#address {
+    font-size: 20px;
+    margin: 0 0 0 1rem;
+  }
+
+  body#contato main section#contato h3#text {
+    font-size: 22px;
+  }
+
+  body#contato main section#social-media ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  body#contato main section#titles ul a li span {
+    padding-right: 1.5rem;
+  }
+
+body#contato main section#social-media ul li span p {
+  text-decoration: underline;
+}
+  
+}
+@media (max-width: 490px) {
+body#contato main section#titles ul a li span {
+    padding-right: 2rem;
+  }
 }

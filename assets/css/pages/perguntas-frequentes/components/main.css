@@ -113,6 +113,7 @@ body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf:hov
   background-color: var(--color-green-hover);
   
 }
+
 body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf a {
   display: flex;
   justify-content: center;
@@ -120,6 +121,7 @@ body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf a {
   align-items: center;
   gap: 1rem;
 }
+
 body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf p {
   font-size: 20px;
   padding: 0 1rem;
@@ -128,6 +130,7 @@ body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf p {
   margin-bottom: 1.2rem;
   color: var(--color-black);
 }
+
 body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf img {
   width: 100px;
   margin-top: 1rem;
@@ -135,24 +138,35 @@ body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf img
 
 /* Responsividade */
 @media (max-width: 1200px) {
-  body#perguntas__frequentes section#pdf div#container__pdf {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 5rem;
-  }
-  body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf {
-    width: 80%;
-  }
+body#perguntas__frequentes section#pdf div#container__pdf {
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
 }
+
+body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf {
+  width: 80%;
+}
+
+body#perguntas__frequentes main section#titles ul a li span {
+  padding-right: 1.5rem;
+}
+}
+
 @media (max-width: 490px) {
   body#perguntas__frequentes section#pdf div#container__pdf {
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    margin-bottom: 5rem;
-  }
-  body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf {
-    width: 80%;
-  }
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+body#perguntas__frequentes main section#pdf div#container__pdf div.block_pdf {
+  width: 80%;
+}
+
+body#perguntas__frequentes main section#titles ul a li span {
+  padding-right: 1.5rem;
+}
 }
