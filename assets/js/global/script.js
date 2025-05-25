@@ -3,6 +3,10 @@ const nomeSalvo = localStorage.getItem("nomeUsuario");
 const nomeMenu = document.querySelector("#user");
 nomeMenu.innerHTML = `Olá, ${nomeSalvo}`;
 
+if (!nomeSalvo) {
+    window.location.href = "login.html";
+}
+
 // Abrir e fechar o menu
 const botaoMenu = document.querySelector("#logo__menu");
 const botaoFechar = document.querySelector("#logo__menu__fechado");
